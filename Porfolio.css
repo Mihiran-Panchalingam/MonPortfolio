@@ -561,17 +561,19 @@ a {
     border-radius: 10px;
     
     
-    width: var(--target-width) !important; 
+    width: 0%; 
+    
+   
     animation: growBar 1.5s ease-out forwards;
 }
-
 
 @keyframes growBar {
     from { 
         width: 0%; 
     }
     to { 
-        width: var(--target-width); 
+        
+        width: var(--target-width) !important; 
     }
 }
 
