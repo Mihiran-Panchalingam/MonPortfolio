@@ -45,20 +45,22 @@
             </div>
 
             <div class="contact-form">
-                <form action="#">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                   
                     <div class="input-group">
                         <div class="input-field">
+                             <input type="hidden" name="access_key" value="5c446a1e-a9fb-4058-af29-eb68d27fe545">
                             <label>Nom :</label>
-                            <input type="text" placeholder="Nom complet" required>
+                            <input type="text" name="NomComplet" placeholder="Nom complet" required>
                         </div>
                         <div class="input-field">
                             <label>Email :</label>
-                            <input type="email" placeholder="email@gmail.com" required>
+                            <input type="email" name="email" placeholder="email@gmail.com" required>
                         </div>
                     </div>
                     <div class="input-field">
                         <label>Message :</label>
-                        <textarea rows="5" placeholder="Votre message..." required></textarea>
+                        <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Envoyer</button>
                 </form>
